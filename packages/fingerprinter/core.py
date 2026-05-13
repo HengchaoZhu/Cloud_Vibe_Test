@@ -1,14 +1,6 @@
-from .dedupe import (
-    ClaimClassification,
-    DedupeConfig,
-    DedupeService,
-    DocumentClassification,
-)
+"""Shared API for URL/content/claim fingerprinting."""
 
-
-
-
-from .core import (
+from normalizer.core import (
     canonicalize_url,
     claim_fingerprint_input,
     content_fingerprint,
@@ -26,9 +18,4 @@ __all__ = [
     "url_fingerprint",
     "content_fingerprint",
     "claim_fingerprint_input",
-    "ClaimClassification",
-    "DedupeConfig",
-    "DedupeService",
-    "DocumentClassification",
-"""Fingerprinting helpers built on top of normalizer primitives."""
 ]

@@ -1,14 +1,7 @@
-from .dedupe import (
-    ClaimClassification,
-    DedupeConfig,
-    DedupeService,
-    DocumentClassification,
-)
-
-
-
+"""Normalization helpers for URLs and text."""
 
 from .core import (
+    TRACKING_PARAMS,
     canonicalize_url,
     claim_fingerprint_input,
     content_fingerprint,
@@ -19,6 +12,7 @@ from .core import (
 )
 
 __all__ = [
+    "TRACKING_PARAMS",
     "canonicalize_url",
     "normalize_text",
     "content_hash",
@@ -26,9 +20,4 @@ __all__ = [
     "url_fingerprint",
     "content_fingerprint",
     "claim_fingerprint_input",
-    "ClaimClassification",
-    "DedupeConfig",
-    "DedupeService",
-    "DocumentClassification",
-"""Fingerprinting helpers built on top of normalizer primitives."""
 ]
