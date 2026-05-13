@@ -1,0 +1,20 @@
+priors:
+  official_company_press: 0.9
+  official_regulatory_filing: 0.95
+  major_business_news: 0.85
+  specialized_tech_news: 0.8
+  private_market_database: 0.85
+  company_blog: 0.8
+  personal_blog: 0.45
+  social_media_allowed: 0.35
+  unknown_scraped_site: 0.2
+
+adjustments:
+  corroborated_by_multiple_sources: 0.05
+  anonymous_or_unsourced_claim: -0.2
+  evidence_span_missing: -0.15
+  official_confirmation_present: 0.1
+
+bounds:
+  min: 0.0
+  max: 1.0

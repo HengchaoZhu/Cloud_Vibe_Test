@@ -1,0 +1,46 @@
+path_types:
+  entity_identity:
+    enabled: true
+    source_class: web
+    priority: 100
+    freshness_days: 30
+    max_results: 20
+    expected_event_types: [other]
+    precision_template: '"{company}" (official OR founder OR headquarters)'
+    recall_template: '"{company}" startup profile investors'
+  official_source:
+    enabled: true
+    source_class: company_site
+    priority: 95
+    freshness_days: 14
+    max_results: 20
+    expected_event_types: [product_launch, partnership, customer_win]
+    precision_template: 'site:{domain} (press OR blog OR announcement OR newsroom)'
+    recall_template: '"{company}" (press release OR company blog)'
+  funding_deal:
+    enabled: true
+    source_class: news
+    priority: 100
+    freshness_days: 30
+    max_results: 20
+    expected_event_types: [funding, mna]
+    precision_template: '"{company}" (raised OR funding OR "Series A" OR "Series B" OR acquisition)'
+    recall_template: '({company} OR {alias_terms}) startup funding investors'
+  product_traction:
+    enabled: true
+    source_class: web
+    priority: 90
+    freshness_days: 21
+    max_results: 20
+    expected_event_types: [product_launch, customer_win, market_signal]
+    precision_template: '"{company}" (launch OR customer OR case study OR adoption)'
+    recall_template: '"{theme}" startup product traction'
+  risk_regulatory:
+    enabled: true
+    source_class: news
+    priority: 98
+    freshness_days: 60
+    max_results: 20
+    expected_event_types: [lawsuit, regulatory, security_incident, layoff]
+    precision_template: '"{company}" (lawsuit OR breach OR investigation OR regulatory OR layoff)'
+    recall_template: '"{company}" risk signal startup'

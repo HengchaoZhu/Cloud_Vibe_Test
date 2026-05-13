@@ -1,0 +1,46 @@
+event_types:
+  funding:
+    description: Funding rounds, debt raises, and related financing announcements.
+    weight: 1.0
+  mna:
+    description: Mergers, acquisitions, and divestitures.
+    weight: 1.0
+  product_launch:
+    description: New product, feature, or platform launch signals.
+    weight: 0.7
+  partnership:
+    description: Strategic partnerships and integrations.
+    weight: 0.75
+  customer_win:
+    description: Named customer adoption and enterprise wins.
+    weight: 0.85
+  hiring:
+    description: Hiring momentum and team expansion.
+    weight: 0.55
+  layoff:
+    description: Workforce reduction and restructuring signals.
+    weight: 0.9
+  executive_change:
+    description: C-level or senior leadership changes.
+    weight: 0.7
+  regulatory:
+    description: Regulatory actions, compliance issues, or investigations.
+    weight: 0.9
+  lawsuit:
+    description: Legal disputes and litigation events.
+    weight: 0.9
+  security_incident:
+    description: Cybersecurity incidents and breaches.
+    weight: 0.95
+  financial_metric:
+    description: Revenue, ARR, burn, profitability, and valuation metric updates.
+    weight: 0.8
+  market_signal:
+    description: Competitive moves and market-level indicators.
+    weight: 0.45
+  technical_signal:
+    description: Engineering activity, OSS, release velocity, and patent signals.
+    weight: 0.5
+  other:
+    description: Catch-all event type for uncategorized claims.
+    weight: 0.3

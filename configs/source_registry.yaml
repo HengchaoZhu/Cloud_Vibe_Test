@@ -1,0 +1,47 @@
+source_types:
+  official_company_press:
+    enabled: true
+    class: official
+    domains: []
+  official_regulatory_filing:
+    enabled: true
+    class: filing
+    domains:
+      - sec.gov
+  major_business_news:
+    enabled: true
+    class: news
+    domains:
+      - reuters.com
+      - bloomberg.com
+      - wsj.com
+      - ft.com
+  specialized_tech_news:
+    enabled: true
+    class: news
+    domains:
+      - techcrunch.com
+      - theinformation.com
+      - venturebeat.com
+  private_market_database:
+    enabled: true
+    class: database
+    domains: []
+  company_blog:
+    enabled: true
+    class: company_site
+    domains: []
+  personal_blog:
+    enabled: true
+    class: blog
+    domains: []
+  social_media_allowed:
+    enabled: false
+    class: social_allowed
+    domains:
+      - x.com
+      - linkedin.com
+  unknown_scraped_site:
+    enabled: true
+    class: other
+    domains: []
