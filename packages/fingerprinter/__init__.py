@@ -1,4 +1,12 @@
-"""Fingerprinting helpers built on top of normalizer primitives."""
+from .dedupe import (
+    ClaimClassification,
+    DedupeConfig,
+    DedupeService,
+    DocumentClassification,
+)
+
+
+
 
 from .core import (
     canonicalize_url,
@@ -18,4 +26,9 @@ __all__ = [
     "url_fingerprint",
     "content_fingerprint",
     "claim_fingerprint_input",
+    "ClaimClassification",
+    "DedupeConfig",
+    "DedupeService",
+    "DocumentClassification",
+"""Fingerprinting helpers built on top of normalizer primitives."""
 ]
